@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Ocultar texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        
+       $("#boton").click(function(){
+           $("#texto").toggle(500);
+       });
+    });
+    </script>
+    <div id="div"><p id="texto">Este texto se va a ocultar</p><input type="button" id="boton" value="Clicka"></input></div>
+  </body>
+</html>

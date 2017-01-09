@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Animacion 5</title>
+    <style type="text/css">
+        #div{width: 40px;
+        height: 40px;
+        background-color: red;
+        position: absolute;
+        margin-right:650px;
+        }
+
+        #div2{
+            position: static;
+            height: 60px;
+            padding-left: 200px;
+            padding-right: 200px;
+          }
+        
+         input{
+        margin-left: 50%;
+            }
+    </style>
+   </head>
+  <body>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        
+       $("#start").click(function(){
+           $("#div").show();
+           $("#div").animate({"right": "200px"}, 1000);
+           $("#div").css({"background-color": "blue",
+"-webkit-transition":"background 1s",
+"-moz-transition":"background 1s",
+"-o-transition":"background 1s",
+"transition":"background 1s"});
+           $("#div").slideUp();
+
+       });
+       
+    });
+    </script>
+    <div id="div2"><div id="div" hidden="yes"></div></div><br/>
+   
+    <input type="button" id="start" name="Start" value="Start"/>
+    <input type="button" id="stop" name="Stop" value="Stop"/>
+  </body>
+</html>

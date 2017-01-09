@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+	<html>
+	<head>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript"src="jquery.validate.min.js"></script>
+	<script>
+	$(function(){
+	 
+	/* Incluimos un método para validar el campo nombre */
+	jQuery.validator.addMethod("nombre", function(value, element) {
+	return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+	});
+	 
+	/* Capturar el click del botón */
+	$("#btn").on("click", function()
+	   {
+	    /* Validar el formulario */
+	    $("#formulario").validate
+	         ({
+	             rules: /* Accedemos a los campos a través de su nombre: email, nombre, edad */
+	             {
+	               nombre: {required: true, nombre: true, minlength: 2, maxlength: 50},
+	               ape: {required: true, ape: true, rangeWords: 2, minlength: 2, maxlength: 50},
+	               fnac: {required: false, dateITA: true, minlength: 0, maxlength: 8},
+	               nif: {required: false, nif: true, minlength: 0, maxlength: 9},
+	               cp: {required: true, digits: true, rangelenght: 5},
+	               email: {required: true, email: true, minlength: 1, maxlength: 3},
+	               blog: {required: false, blog: true, url: true, minlength: 0, maxlength: 50}
+	             },
+	             messages: /* Accedemos a los campos a través de su nombre: email, nombre, edad */
+	             {
+	                 
+	               nombre: {required: 'El campo es requerido',
+	               nombre: 'Sólo letras',
+	               minlength: 'El mínimo permitido son 2 caracteres',
+	               maxlength: 'El máximo permitido son 50 caracteres'},
+	               
+	               ape: {required: 'El campo es requerido',
+	               ape: 'Sólo letras',
+	               rangeWords: 'Solo se permiten dos apellidos',
+	               minlength: 'El mínimo permitido son 2 caracteres',
+	               maxlength: 'El máximo permitido son 50 caracteres'},
+	               
+	               fnac: {fnac: 'Sólo numeros y /',
+	               dateITA: 'Debe ser formato dd/mm/aa',
+	               maxlength: 'El máximo permitido son 8 caracteres'},
+	               
+	               nif: {required: 'El campo es requerido',
+	               nif: '8 numeros y una letra',
+	               maxlength: 'El máximo permitido son 9 caracteres'},
+	               
+	               cp: {required: 'El campo es requerido',
+	               digits: 'Sólo dígitos',
+	               minlength: 'El mínimo permitido son 1 caracteres',
+	               maxlength: 'El máximo permitido son 3 caracteres'},
+	               
+	               email: {email: 'El formato de email es incorrecto',
+	               minlength: 'El mínimo permitido son 5 caracteres',
+	               maxlength: 'El máximo permitido son 80 caracteres'},
+	               
+	               blog: {url: 'El formato de link es incorrecto',
+	               minlength: 'El mínimo permitido son 5 caracteres',
+	               maxlength: 'El máximo permitido son 80 caracteres'},
+	               
+	             }
+	         });
+	   });
+	 
+	});
+	</script>
+	</head>
+	<body>
+	<form method="post" id="formulario">
+	 
+	  <table>
+	 
+	   <tr>
+	      <td>Nombre (*):</td><td><input type="text" name="nombre" id="nombre"></td>
+	   </tr>
+	   <tr>
+	      <td>Apellidos (*):</td><td><input type="text" name="ape"id="ape"></td>
+	   </tr>
+	   <tr>
+	      <td>Fecha de nacimiento (dd/mm/aa):</td><td><input type="text" name="fnac"id="fnac"></td>
+	   </tr>
+	   <tr>
+	      <td>NIF:</td><td><input type="text" name="nif" id="nif"></td>
+	   </tr>
+	   <tr>
+	      <td>CP (*):</td><td><input type="text" name="cp" id="cp"></td>
+	   </tr>
+	   <tr>
+	      <td>Email (*):</td><td><input type="text" name="email" id="email"></td>
+	   </tr>
+	   <tr>
+	      <td>Blog personal:</td><td><input type="text" name="blog" id="blog"></td>
+	   </tr>
+	  </table>
+	 
+	 <button type="submit" id="btn">Enviar >></button>
+	 
+	</form>
+	</body>
+	</html>

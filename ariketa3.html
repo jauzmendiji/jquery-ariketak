@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Imagenes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        
+       $("#foto").click(function(){
+           $("#foto").animate({height:"400px", width:"300px"}, 3000);
+           $("#div").css({float: "right"});
+       });
+    });
+    </script>
+    <div id="div"><img src="imagenes/img1.jpg" id="foto"></img></div>
+  </body>
+</html>

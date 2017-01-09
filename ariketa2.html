@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Imagenes</title>
+  </head>
+  <body>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        
+       $("#ocultar").click(function(){
+           $("img").hide("fast");
+       });
+ 
+        $("#mostrar").click(function(){
+           $("img").show("fast");
+       });
+    });
+    </script>
+    <div align="center">
+    <input type="button" value="Ocultar" id="ocultar"></input>
+    <input type="button" value="Mostrar" id="mostrar"></input>
+    </div><br/>
+
+    <div align="center"><img src="imagenes/img1.jpg" id="foto"></img></div>
+  </body>
+</html>

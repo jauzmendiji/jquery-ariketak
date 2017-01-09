@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Fades diferentes</title>
+   </head>
+  <body>
+      <style type="text/css">
+          #c1 { width:80%; height: 100px; margin: 5px; background-color: blue; }
+      </style>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="MooTools-Core-1.5.2.js"></script>
+
+
+    <script>
+    
+    $(document).ready(function(){
+    c1Fx = new Fx.Tween("c1",{
+        property:"width",
+        duration:4000,
+        fps:50,
+        transition:"elastic:out"
+        });
+
+     $$("#boton1").addEvent("click",function(){
+        c1Fx.start("30");
+    });
+    
+    c1Fx2=new Fx.Tween("c1",{
+        property:"width",
+        duration:4000,
+        fps:50,
+        unit:"%",
+        transition:"elastic:out"
+         });
+   
+    $$("#boton2").addEvent("click",function(){
+        c1Fx2.start("30")
+     });
+
+    });
+
+    </script>
+    <div id="c1"></div>
+    <button id="boton1">Efecto 1</button>
+    <button id="boton2">Volver</button>
+
+
+  </body>
+</html>

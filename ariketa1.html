@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Imagenes</title>
+  </head>
+  <body>
+   <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        
+       $("#foto").click(function(){
+           $("img").fadeOut(1500, 0,5);
+           $("#text").fadeIn(1500, 0,5);
+           
+         });
+       
+       $("#text").click(function(){
+           $("p").fadeOut();
+           $("#foto").fadeIn();
+       });
+    });
+    </script>
+         <div align=center><p hidden="yes" id="text" style="margin-top:70px">Sons Of Anarchy</p><div>
+         <img src="imagenes/img1.jpg" id="foto"></img></div></div>
+  </body>
+</html>

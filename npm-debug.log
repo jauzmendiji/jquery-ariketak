@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jquery-1.11.3.min.js' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'jquery-1.11.3.min.js', null ]
+5 verbose cache add name=undefined spec="jquery-1.11.3.min.js" args=["jquery-1.11.3.min.js",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'jquery-1.11.3.min.js',
+6 verbose parsed url   path: 'jquery-1.11.3.min.js',
+6 verbose parsed url   href: 'jquery-1.11.3.min.js' }
+7 silly lockFile 51b34938-jquery-1-11-3-min-js jquery-1.11.3.min.js
+8 verbose lock jquery-1.11.3.min.js /home/ubuntu/.npm/51b34938-jquery-1-11-3-min-js.lock
+9 verbose chmod /tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz 644
+10 verbose tar unpack /tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz
+11 silly lockFile 654df54d--4691273211501539-tmp-tgz-unpack tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz-unpack
+12 verbose lock tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz-unpack /home/ubuntu/.npm/654df54d--4691273211501539-tmp-tgz-unpack.lock
+13 silly lockFile 417e1e9c-24034-0-4691273211501539-tmp-tgz tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz
+14 verbose lock tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz /home/ubuntu/.npm/417e1e9c-24034-0-4691273211501539-tmp-tgz.lock
+15 silly gunzTarPerm modes [ '755', '644' ]
+16 error not a package /tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz
+17 silly lockFile 654df54d--4691273211501539-tmp-tgz-unpack tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz-unpack
+18 silly lockFile 654df54d--4691273211501539-tmp-tgz-unpack tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz-unpack
+19 silly lockFile 417e1e9c-24034-0-4691273211501539-tmp-tgz tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz
+20 silly lockFile 417e1e9c-24034-0-4691273211501539-tmp-tgz tar:///tmp/npm-1284-02SvQLh2/1445321424034-0.4691273211501539/tmp.tgz
+21 silly lockFile 51b34938-jquery-1-11-3-min-js jquery-1.11.3.min.js
+22 silly lockFile 51b34938-jquery-1-11-3-min-js jquery-1.11.3.min.js
+23 verbose addNamed [ 'jquery-1.11.3.min.js', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile ae4886f2-jquery-1-11-3-min-js jquery-1.11.3.min.js@
+26 verbose lock jquery-1.11.3.min.js@ /home/ubuntu/.npm/ae4886f2-jquery-1-11-3-min-js.lock
+27 silly addNameRange { name: 'jquery-1.11.3.min.js', range: '*', hasData: false }
+28 verbose request where is /jquery-1.11.3.min.js
+29 verbose request registry https://registry.npmjs.org/
+30 verbose request id bc06e0f4d2027c7a
+31 verbose url raw /jquery-1.11.3.min.js
+32 verbose url resolving [ 'https://registry.npmjs.org/', './jquery-1.11.3.min.js' ]
+33 verbose url resolved https://registry.npmjs.org/jquery-1.11.3.min.js
+34 verbose request where is https://registry.npmjs.org/jquery-1.11.3.min.js
+35 info trying registry request attempt 1 at 06:10:24
+36 http GET https://registry.npmjs.org/jquery-1.11.3.min.js
+37 http 404 https://registry.npmjs.org/jquery-1.11.3.min.js
+38 silly registry.get cb [ 404,
+38 silly registry.get   { 'content-type': 'application/json',
+38 silly registry.get     'cache-control': 'max-age=0',
+38 silly registry.get     'content-length': '2',
+38 silly registry.get     'accept-ranges': 'bytes',
+38 silly registry.get     date: 'Tue, 20 Oct 2015 06:10:24 GMT',
+38 silly registry.get     via: '1.1 varnish',
+38 silly registry.get     age: '0',
+38 silly registry.get     connection: 'keep-alive',
+38 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+38 silly registry.get     'x-cache': 'MISS',
+38 silly registry.get     'x-cache-hits': '0',
+38 silly registry.get     'x-timer': 'S1445321424.135824,VS0,VE101' } ]
+39 silly lockFile ae4886f2-jquery-1-11-3-min-js jquery-1.11.3.min.js@
+40 silly lockFile ae4886f2-jquery-1-11-3-min-js jquery-1.11.3.min.js@
+41 error 404 Not Found
+41 error 404
+41 error 404 'jquery-1.11.3.min.js' is not in the npm registry.
+41 error 404 You should bug the author to publish it
+41 error 404
+41 error 404 Maybe try 'npm search jquery 1 11 3 min'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, or http url, or git url.
+42 error System Linux 4.2.0-c9
+43 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "jquery-1.11.3.min.js"
+44 error cwd /home/ubuntu/workspace
+45 error node -v v0.10.35
+46 error npm -v 1.4.28
+47 error code E404
+48 verbose exit [ 1, true ]
